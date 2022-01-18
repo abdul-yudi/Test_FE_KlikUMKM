@@ -1,0 +1,56 @@
+body {
+  font-family: sans-serif;
+  background-color: #333333;
+}
+
+.loader {
+  position: absolute;
+  top: calc(50% - 4em);
+  left: calc(50% - 4em);
+  width: 50px;
+  height: 50px;
+  border: 1.1em solid #ffffff;
+  border-left: 1.1em solid #000000;
+  border-radius: 50%;
+  animation: load8 1.1s infinite linear;
+  transition: opacity 0.3s;
+}
+
+.loader--hide {
+  opacity: 0;
+  z-index: -1;
+}
+
+ul li {
+  margin-bottom: 15px;
+}
+
+.page-head {
+  display: flex;
+  padding: 15px;
+}
+
+.page-head a {
+  margin-right: auto;
+}
+
+.page-head .star {
+  font-size: 44px;
+  color: orange;
+  line-height: 20px;
+  margin-left: auto;
+  cursor: pointer;
+}
+
+.card-title span{
+  font-size: 25px;
+}
+
+@keyframes load8 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

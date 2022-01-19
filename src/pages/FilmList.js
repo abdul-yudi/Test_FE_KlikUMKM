@@ -58,7 +58,7 @@ function FilmList() {
               <p>Bookmark is empty</p>
             ) : (
               recentBookmark.map((item, index) => (
-                <div className="ml-4" key={index}>
+                <div className="ml-4 mb-1" key={index}>
                   &bull;&nbsp; <Link className="mb-1" to={`/detail/${item.url.split('/').slice(-2)[0]}`}>{`${item.title}`}</Link>
                 </div>
               ))
